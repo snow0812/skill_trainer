@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pypdf
+certifi
+python-dotenv>=1.0.0

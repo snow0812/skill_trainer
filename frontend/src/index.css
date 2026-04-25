@@ -1,0 +1,46 @@
+/* Legacy variable bridge — pages still reference --text, --border, etc. */
+:root {
+  --text: var(--fg-2);
+  --text-h: var(--fg-0);
+  --bg: var(--bg-0);
+  --border: var(--line-1);
+  --code-bg: var(--bg-2);
+  --accent-bg: var(--accent-soft);
+  --accent-border: var(--accent-line);
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
+  --sans: var(--font-sans);
+  --mono: var(--font-mono);
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: var(--text-h);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
